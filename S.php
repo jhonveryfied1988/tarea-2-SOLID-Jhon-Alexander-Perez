@@ -3,6 +3,9 @@
 Single responsibility principle o principio de unica responsabilidad
 
 Una clase debe solo tener un motivo para cambiar, por ende solo debe cumplir una tarea.
+
+Consecuencias: Al usar el principio de responsabilidad unica, el sistema permite un mejor manejo y un mayor control a la hora de mejorarlo.
+Dado que una clase cumple con solo una funcion.
 */
 
 Class Coche 
@@ -23,7 +26,7 @@ Class Coche
 class CocheDB{  
     public function guardarCocheDB($marca){ 
         $coche = new Coche($marca);
-        return "EL coche es un: ".$coche->getMarcaCoche();
+        return "El coche es un: ".$coche->getMarcaCoche();
     }
 
     public function eliminarCocheDB(){ 

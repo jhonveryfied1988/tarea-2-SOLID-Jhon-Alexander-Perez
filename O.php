@@ -3,6 +3,7 @@
 Open/Closed principle  / Principio abierto/cerrado
 
 Establece que las entidades software (clases, módulos y funciones) deberían estar abiertos para su extensión, pero cerrados para su modificación.
+
 */
 
 abstract class Coche {  
@@ -27,7 +28,7 @@ class Mercedes extends Coche {
     public function precioMedioCoche() { return 27000; }
 }
 
-function main($arrayCoches){
+function main(){
 
     $arrayCoches = [
             new Renault(),
@@ -39,8 +40,11 @@ function main($arrayCoches){
 }
 
 function imprimirPrecioMedioCoche($coches){  
+   
     for ($x = 0; $x < count($coches); $x++ ) {
-        echo $coche[$x]->precioMedioCoche();
+       echo "<p>El precio de ".get_class($coches[$x])." es ".number_format($coches[$x]->precioMedioCoche())."</p>";
     }
 }
+
+main();
 ?>

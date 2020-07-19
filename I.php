@@ -23,21 +23,25 @@ interface  iAveNadadora {
 class Loro implements iAve,  iAveVoladora {  
    
     public function comer() { 
-       // 
+       echo "Puedo Comer";
     }
     public function volar() { 
-        //
+        echo "Puedo Volar";
     }
 }
 
 class Pinguino implements iAve,  iAveNadadora {  
    
     public function comer() { 
-        // 
+        echo "Puedo Comer";
      }
      public function nadar() { 
-         //
+        echo "Puedo Nadar";
      }
 }
 
+echo "<br>";
+echo "<p>Inicio: I</p>";
+echo "<p>".Pinguino::comer()."</p>";
+echo "<p>".Pinguino::nadar()."</p>";
 ?>

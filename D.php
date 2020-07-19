@@ -40,7 +40,9 @@ class APIService implements Conexion{
 }
 
 echo "Inicio: D";
+echo "<br>";
 $dbService = new DatabaseService();
-echo $dbService->getDatos()." ";
+echo "El nombre actual es : ".$dbService->getDatos()." ";
+echo "<br>";
 echo $dbService->setDatos("Juan");
 ?>

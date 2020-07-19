@@ -45,6 +45,12 @@ class Mercedes extends Coche {
     }
 }
 
+echo "<br>";
+echo "Inicio: L";
+$oAve = new Renault();
+echo "<br>";
+echo "El precio del coche es : ".$oAve->precioMedioCoche()."<br>";
+echo "El numero de asientos es : ".$oAve->numAsientos()."<br>";
 
 
 ?>
